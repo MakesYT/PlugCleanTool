@@ -14,3 +14,4 @@ bin/Release/net7.0/publish/PlugCleanTool.dll
 bin/Release/net7.0/publish/PlugCleanTool.exe
 bin/Release/net7.0/publish/PlugCleanTool.pdb
 bin/Release/net7.0/publish/PlugCleanTool.runtimeconfig.json
+obj/
