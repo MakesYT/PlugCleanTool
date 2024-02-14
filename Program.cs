@@ -17,4 +17,12 @@ if (dir.Exists)
         File.Delete($"{file.FullName}\\Microsoft.Windows.SDK.NET.dll");
         File.Delete($"{file.FullName}\\WinRT.Runtime.dll");
     }
+
+    foreach (var fileInfo in dir.GetFiles())
+    {
+        if (fileInfo.Extension == ".pdb")
+        {
+            fileInfo.Delete();
+        }
+    }
 }
