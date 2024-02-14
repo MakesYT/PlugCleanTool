@@ -18,7 +18,7 @@ if (dir.Exists)
         File.Delete($"{file.FullName}\\WinRT.Runtime.dll");
     }
 
-    foreach (var fileInfo in dir.GetFiles())
+    foreach (var fileInfo in new DirectoryInfo(Directory.GetCurrentDirectory()).GetFiles())
     {
         if (fileInfo.Extension == ".pdb")
         {
