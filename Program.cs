@@ -20,9 +20,11 @@ if (dir.Exists)
 
     foreach (var fileInfo in new DirectoryInfo(Directory.GetCurrentDirectory()).GetFiles())
     {
-        if (fileInfo.Extension == ".pdb")
+        if (fileInfo.Extension is ".pdb" or ".xml")
         {
             fileInfo.Delete();
         }
+       
+        
     }
 }
